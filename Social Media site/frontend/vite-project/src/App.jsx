@@ -26,7 +26,7 @@ import Upload from "./pages/Upload";
 import { setOnlineUsers, setSocket, setSocketDisconnected } from "./redux/SocketSlice";
 import { setNotificationData } from "./redux/userSlice";
 
-export const serverUrl = "http://localhost:8000";
+export const serverUrl = "https://vybe-backend-f6x4.onrender.com";
 
 function Hello() {
   const { userData } = useSelector(state => state.user);
