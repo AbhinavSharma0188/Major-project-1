@@ -4,6 +4,7 @@ import { RiVideoLine } from "react-icons/ri";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import dp from "../assets/dp.webp";
+import logo from "../assets/logo.png"; // Added this
 
 function Nav() {
   const navigate = useNavigate();
@@ -37,6 +38,16 @@ function Nav() {
           className="w-full h-full object-cover"
         />
       </div>
+
+      {/* FlowForge Project Link - Added this block */}
+      <a 
+        href="https://flow-forge-frontend.onrender.com/watch-video/699747af9e397fc42a9d9ee2" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="flex items-center justify-center hover:scale-110 transition-transform"
+      >
+        <img src={logo} alt="FlowForge" className="w-[30px] h-[30px] object-contain rounded-full" />
+      </a>
     </div>
   );
 }
